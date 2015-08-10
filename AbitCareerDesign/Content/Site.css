@@ -1,0 +1,85 @@
+﻿body {
+    background-image: url(subtle_dots.png)
+}
+
+.Logo
+{
+    font-family: marckScript;
+    font-size: 30px;
+}
+
+.row.full-width
+{
+    width: 100%;
+    max-width: 100%;
+   padding-left: 0px !important;
+}
+
+.columns.fixed
+{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.myNav
+{
+    height: 80px;
+    line-height: 80px;
+    overflow: hidden;
+}
+
+.top-bar
+{
+    background:  black;
+}
+ 
+.top-bar-section ul {
+    background: black;
+}
+ 
+.top-bar-section li a:not(.button) {
+    background: black;
+}
+
+
+.myNav ul
+{
+    line-height: 80px;
+    height: 80px;
+    background: black;
+}
+
+.myNav a
+{
+    line-height: 80px;
+    height: 80px;
+}
+
+.top-bar
+{
+    height: inherit;
+    line-height: inherit;
+}
+
+
+.top-bar-section li:not(.has-form) a:not(.button)
+{
+    line-height: inherit;
+    border: 1px solid green;
+    margin-top: 10px;
+    background-color: black;
+}
+
+.top-bar-section li a
+{
+    font-weight: bold !important;
+}
+
+
+
+@font-face
+{
+    font-family: marckScript;
+    src: url(fonts/MarckScript-Regular.ttf);
+}
+
