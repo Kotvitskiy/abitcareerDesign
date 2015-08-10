@@ -12,7 +12,7 @@
     @Styles.Render("~/Content/foundation/foundation.css")
     @Styles.Render("~/Content/Site.css")
     @RenderSection("head", required: false)
-    @Scripts.Render("~/bundles/modernizr")
+
 </head>
 <body>
         <div class="row full-width">
@@ -26,14 +26,14 @@
                         </ul>
                     </section>
 
-                    <section class="top-bar-section small-2 large-4 columns">
+                    @*<section class="top-bar-section small-2 large-4 columns">
                         <ul class="left">
                             <li><a href="#">Calculate salary</a></li>
                             <li><a href="#">Specialities</a></li>
                             <li><a href="#">Universities</a></li>
                             <li><a href="#">About</a></li>
                         </ul>
-                    </section>
+                    </section>*@
 
                     <section class="small-2 large-4 columns"></section>
                 </nav>
@@ -41,11 +41,13 @@
         </div>
     @RenderBody()
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/foundation")
+    @Scripts.Render("~/Scripts/jquery-1.10.2.min.js")
+    @Scripts.Render("~/Scripts/foundation/foundation.js")
     <script>
         $(document).foundation();
+        // Для запуска функции:
     </script>
+
     @*Use the Scripts section to define page specific scripts*@
     @RenderSection("scripts", required: false)
 </body>

@@ -1,11 +1,16 @@
 ﻿body {
-    background-image: url(subtle_dots.png)
+    background-image: url(subtle_dots.png);
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1024px;
+
 }
 
 .Logo
 {
     font-family: marckScript;
     font-size: 30px;
+    margin-left: 5em;
 }
 
 .row.full-width
@@ -13,6 +18,8 @@
     width: 100%;
     max-width: 100%;
    padding-left: 0px !important;
+   padding: 1px;
+   margin-bottom: 100px;
 }
 
 .columns.fixed
@@ -25,7 +32,6 @@
 {
     height: 80px;
     line-height: 80px;
-    overflow: hidden;
 }
 
 .top-bar
@@ -75,11 +81,74 @@
     font-weight: bold !important;
 }
 
+.content
+{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.blocks
+{
+    margin: 0 auto;
+}
+
+.card
+{
+    width: 250px;
+    height: 120px;
+    margin: 30px;
+}
+
+.boxShadow17 {
+ 
+  border-radius: 3px;
+  box-shadow:
+     inset rgba(0,0,0,.6) 0 -3px 5px,
+   inset rgba(252,255,255,.7) 0 3px 8px,
+   rgba(0,0,0,.8) 0 3px 8px -3px;
+}
+
+
+
+.salary-wrapper
+{
+    text-align: center;
+    margin-top: 25px;
+    border-top: 1px solid grey;
+    padding-top: 20px;
+    font-weight: 100;   
+}
+
+.name
+{
+  margin-bottom: -20px;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid grey;
+    width: 400px;
+    margin-bottom: 50px;
+    margin-left: 1em;
+}
+
 
 
 @font-face
 {
     font-family: marckScript;
     src: url(fonts/MarckScript-Regular.ttf);
+}
+
+[class*="column"] + [class*="column"]:last-child
+{
+    float: left;
 }
 
